@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados Sierra Paraiso Race - MTB</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="app-header">
+        <div class="logo-container">
+            <img src="Logo/TCTJaguar.png" alt="Logo TCT Jaguar" class="app-logo">
+        </div>
+        <div class="header-content">
+            <h1>SIERRA PARAISO RACE</h1>
+            <h2>LA PRUEBA: RUNNING <br> Resultados Oficiales</h2>
+        </div>
+    </header>
+
+    <main class="app-main">
+        <section class="filters-section">
+            <div class="filter-group">
+                <label for="categoryFilter">Categoría / Distancia</label>
+                <select id="categoryFilter">
+                    <option value="all">Todas</option>
+                    <option value="10 K Abierta">10 K Abierta</option>
+                    <option value="5 K Abierta">5 K Abierta</option>
+                    <option value="5 K Canicross">5 K Canicross</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="genderFilter">Rama (Género)</label>
+                <select id="genderFilter">
+                    <option value="all">Todos</option>
+                    <option value="Damas">Damas</option>
+                    <option value="Hombres">Hombres</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="cityFilter">Ciudad</label>
+                <input type="text" id="cityFilter" placeholder="Ej: Bucaramanga...">
+            </div>
+            <div class="filter-group search-group">
+                <label for="searchFilter">Buscar Atleta o Placa</label>
+                <input type="text" id="searchFilter" placeholder="Nombre o Placa...">
+            </div>
+        </section>
+
+        <section class="results-info">
+            <p>Mostrando <span id="resultsCount">0</span> resultados</p>
+        </section>
+
+        <section class="results-section" id="resultsContainer">
+            <!-- Results will be injected here via JS -->
+        </section>
+    </main>
+
+    <!-- Modal for Diploma -->
+    <div class="modal-overlay" id="diplomaModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModalBtn">&times;</button>
+            <h3 id="modalAthleteName">Diploma</h3>
+            <div class="diploma-container">
+                <iframe id="diplomaFrame" src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

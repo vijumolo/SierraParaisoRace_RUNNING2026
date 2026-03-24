@@ -1,0 +1,11 @@
+node_modules/
+package-lock.json
+.DS_Store
+raw_text.txt
+diplomas_text.txt
+extract.py
+extract.js
+extract2.js
+generate_db.js
+split_pdf.js
+extract_diplomas.js
